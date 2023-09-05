@@ -8,6 +8,9 @@ public class playerMovement : MonoBehaviour
     public float speed = 3f;
     public Rigidbody2D rb;
     private Vector2 dir;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +22,7 @@ public class playerMovement : MonoBehaviour
     {
         float x = Input.GetAxisRaw("Horizontal");
         float y = Input.GetAxisRaw("Vertical");
-        Vector2 dir = new Vector2(x, y); //where we move
+        dir = new Vector2(x, y).normalized; //where we move
         //transform.Translate(direction * Time.deltaTime * speed); //how we move
     }
     private void FixedUpdate()
