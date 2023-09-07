@@ -8,7 +8,7 @@ public class playerMovement : MonoBehaviour
     public float speed = 3f;
     public Rigidbody2D rb;
     private Vector2 dir;
-
+    public bool hasKey = true;
 
 
     // Start is called before the first frame update
