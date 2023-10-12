@@ -7,7 +7,7 @@ public class HP : MonoBehaviour
 {
     public Image HPBar;
     public float Health;
-    float MaxHealth;
+    public float MaxHealth;
     void Start()
     {
         MaxHealth = Health;
