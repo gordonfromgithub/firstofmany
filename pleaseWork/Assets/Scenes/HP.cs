@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HP : MonoBehaviour
 {
     public Image HPBar;
     public float Health;
     public float MaxHealth;
+    public string LevelName;
     void Start()
     {
         MaxHealth = Health;
@@ -17,11 +19,15 @@ public class HP : MonoBehaviour
     void Update()
     {
         HPBar.fillAmount = Health / MaxHealth;
+        if(Health <= 0)
+        {
+            Death();
+        }
     }
 
     public void Death()
     {
-        Debug.Log("I died");
+        SceneManager.LoadScene(LevelName);
     }
     public void TakeDamage(float damage)
     {
