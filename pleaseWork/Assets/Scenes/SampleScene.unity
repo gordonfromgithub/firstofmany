@@ -13963,7 +13963,7 @@ GameObject:
   m_Layer: 0
   m_Name: Waypoint
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -19564,9 +19564,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 6
   rb: {fileID: 1338036238}
-  anim: {fileID: 0}
-  Sprite: {fileID: 0}
-  hasKey: 1
+  hasKey: 0
 --- !u!61 &1338036237
 BoxCollider2D:
   m_ObjectHideFlags: 0
