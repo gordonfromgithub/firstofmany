@@ -20231,6 +20231,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   InRange: 0
+  LevelName: WinScreen
 --- !u!1 &1847627487
 GameObject:
   m_ObjectHideFlags: 0

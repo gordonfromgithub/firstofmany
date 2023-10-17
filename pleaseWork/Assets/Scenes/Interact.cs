@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class Interact : MonoBehaviour
 {
     public GameObject myText;
     public UnityEvent ToRun;
     public bool InRange = false;
+    public string LevelName;
     void Start()
     {
         myText.SetActive(false);
@@ -27,6 +29,7 @@ public class Interact : MonoBehaviour
             Debug.Log("We enter the trigger");
             myText.SetActive(true);
             InRange = true;
+            SceneManager.LoadScene(LevelName);
         }
     }
 
